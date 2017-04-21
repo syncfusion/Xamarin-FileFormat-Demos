@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Samples>
+
+  <Group Title="DocIO"
+            ImageId="docio.png"
+        IsUpdated="False"
+            Description="" >
+    <Sample Title="Getting Started" Type="SampleBrowser.GettingStartedDocIO"/>
+    <Sample Title="Built-in Style" Type="SampleBrowser.BuiltInStyle"/>
+    <Sample Title="Custom Style" Type="SampleBrowser.CustomStyle"/>
+    <Sample Title="Bookmark Navigation" Type="SampleBrowser.BookmarkNavigation"/>
+    <Sample Title= "Pie Chart" Type = "SampleBrowser.PieChart"/>
+    <Sample Title ="Bar Chart" Type="SampleBrowser.BarChart"/>
+    <Sample Title="Letter Formatting" Type="SampleBrowser.LetterFormatting"/>
+    <Sample Title="Word to PDF" Type="SampleBrowser.WordToPDF" />
+  </Group>
+  
+  <Group Title="PDF"
+     ImageId="pdf.png">
+    <Sample Title="Getting Started" Type="SampleBrowser.GettingStartedPDF"/>
+    <Sample Title="Barcode" Type="SampleBrowser.Barcode"/>    
+    <Sample Title="Merge PDF" Type="SampleBrowser.MergePDF"/>
+    <Sample Title="Stamping" Type="SampleBrowser.Stamping"/>   
+    <Sample Title="Table Features" Type="SampleBrowser.TableFeatures"/>
+	<Sample Title="Mail Attachment" Type="SampleBrowser.MailAttachment"/>
+  </Group>
+  
+  <Group Title="PDFViewer" ImageId="pdfviewer.png" IsPreview="true">
+    <Sample Title="Getting Started" Type="SampleBrowser.PDFViewerGettingStarted" />
+  </Group>
+  
+  <Group Title="Presentation"
+           ImageId="presentation.png"
+           Description="">
+
+    <Sample Title="Getting Started" Type="SampleBrowser.GettingStartedPresentation" />
+    <Sample Title="Images" Type="SampleBrowser.ImagesPresentation"/>
+    <Sample Title="Slides" Type="SampleBrowser.SlidesPresentation"/>
+    <Sample Title="Tables" Type="SampleBrowser.TablesPresentation"/>
+    <Sample Title="Charts" Type="SampleBrowser.ChartsPresentation"/>
+  </Group>
+  
+  <Group Title="XlsIO"
+           ImageId="xlsio.png"
+           Description="">
+
+    <Sample Type="SampleBrowser.CreateSpreadsheetPage"  Title="Create Spreadsheet" />
+    <Sample Type="SampleBrowser.ChartsPage" Title="Charts"  />
+    <Sample Type="SampleBrowser.FormulasPage" Title="Formulas" />
+    <Sample Type="SampleBrowser.ImportBusinessObjectsPage"  Title="Import from Objects" />
+    <Sample Type="SampleBrowser.ImportXMLPage" Title="Import from XML"  />
+    <Sample Type="SampleBrowser.FiltersPage" Title="Filters" />
+    <Sample Type="SampleBrowser.FindAndReplacePage" Title="Find and Replace"  />
+    <Sample Type="SampleBrowser.ExportToDataGrid" Title="Export To DataGrid" />
+    <Sample Type="SampleBrowser.TemplateMarkerPage" Title="Template Marker"/>
+    <Sample Type="SampleBrowser.ConditionalFormattingsPage" Title="Conditional Formatting"/>
+    <Sample Type="SampleBrowser.ExceltoPDFPage" Title="Excel to PDF"/>
+  </Group>
+  
+</Samples>

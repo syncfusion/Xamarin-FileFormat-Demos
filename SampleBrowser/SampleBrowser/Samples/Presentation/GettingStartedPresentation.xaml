@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:SamplePage
+             xmlns:local="clr-namespace:SampleBrowser;assembly=SampleBrowser"
+             x:Name="page"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleBrowser.GettingStartedPresentation">
+
+
+  <local:SamplePage.ContentView>
+    <StackLayout>
+      <StackLayout.BindingContext>
+        <local:PresentationViewModel />
+      </StackLayout.BindingContext>
+      <Label  x:Name="SampleTitle" Text="Getting Started"
+            FontSize="Large"
+              HorizontalOptions="Center"
+            VerticalOptions="Center">
+      </Label>
+      <Label></Label>
+      <Label x:Name="Description" Text="This sample demonstrates how to create a PowerPoint presentation by adding text with simple text-formattings using Presentation library" FontSize="Medium" VerticalOptions="Center">
+      </Label>
+      <Label></Label>
+      <Button x:Name="btnGenerate" Text ="Generate Presentation" Command="{Binding GettingStartedCommand}" HorizontalOptions="Center"></Button>
+    </StackLayout>
+  </local:SamplePage.ContentView>
+  <local:SamplePage.PropertyView>
+
+  </local:SamplePage.PropertyView>
+
+</local:SamplePage>

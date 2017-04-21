@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+              xmlns:local="clr-namespace:SampleBrowser;assembly=SampleBrowser"
+              xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="SampleBrowser.ControlPage">
+
+  <ContentPage>
+    <local:ControlListViewModel/>
+  </ContentPage>
+
+  <!--<ContentPage.ToolBars>
+    <ToolbarItem Text="All Controls"/>
+  </ContentPage.ToolBars>-->
+
+  <!--<ContentPage.Title>
+
+    <OnPlatform x:TypeArguments="String">
+      <OnPlatform.iOS>
+        "Essential Studio"
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        "Essential Studio"
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        "Essential Studio"
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+
+  </ContentPage.Title>-->
+
+  <!--<ListView ItemsSource="{Binding MasterSampleLists}" x:Name="RootList">
+
+  </ListView>-->
+
+
+</ContentPage>

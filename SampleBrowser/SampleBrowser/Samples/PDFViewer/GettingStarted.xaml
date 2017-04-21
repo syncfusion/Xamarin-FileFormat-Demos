@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:SamplePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleBrowser;assembly=SampleBrowser"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             x:Class="SampleBrowser.PDFViewerGettingStarted">
+  <local:SamplePage.ContentView>
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid Grid.Row="0" BackgroundColor="#E9E9E9" HorizontalOptions="Fill" VerticalOptions="Fill">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="3.0*" />
+          <ColumnDefinition Width="0.3*" />
+          <ColumnDefinition Width="1.5*" />
+          <ColumnDefinition Width="1.5*" />
+          <ColumnDefinition Width="1.5*" />
+          <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions> 
+        <Entry Margin="10,0,0,0" Keyboard="Default" FontSize="18" x:Name="pageNumberEntry" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" Grid.Column="0" VerticalOptions="Center"/>
+        <Label Text="/" Grid.Column="1" FontSize="18" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Label x:Name="pageCountLabel" Grid.Column="2" FontSize="18" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+        <Button x:Name="goToNextButton"  Grid.Column="3" BackgroundColor="Transparent" Image="PageDown.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="PageUp.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+      </Grid>
+      <syncfusion:SfPdfViewer x:Name="pdfViewerControl" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Fill" InputFileStream="{Binding PDF}"/>
+    </Grid>
+  </local:SamplePage.ContentView>
+</local:SamplePage>

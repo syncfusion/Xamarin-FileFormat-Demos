@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:SamplePage
+             xmlns:local="clr-namespace:SampleBrowser;assembly=SampleBrowser"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleBrowser.FindAndReplacePage">
+
+  <local:SamplePage.ContentView>
+    <StackLayout x:Name="Layout">
+      <StackLayout.BindingContext>
+        <local:FindAndReplaceViewModel x:Name="viewModel"/>
+      </StackLayout.BindingContext>
+      <Label x:Name="SampleTitle"  Text = "Find and Replace"              
+              FontSize="Large"
+              HorizontalOptions="Center"
+            VerticalOptions="Center">
+      </Label>
+      <Label></Label>
+      <Label x:Name="Description" Text="This sample demonstrates how to find and replace data within Excel worksheet."
+                 FontSize="Medium" VerticalOptions="Center">
+      </Label>
+      <Label></Label>      
+      <Label FontSize="Medium" >Find what:</Label>
+      <Picker x:Name="picker" WidthRequest="200">
+         <Picker.Behaviors>
+              <local:FindAndReplacePicker />
+         </Picker.Behaviors>
+      </Picker>
+      <Label FontSize="Medium" >Replace with:</Label>
+      <Entry x:Name="entry" WidthRequest="200" Text="{Binding ReplaceText}"/>
+      <StackLayout>              
+      <Grid ColumnSpacing="10">
+      <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>        
+        <ColumnDefinition Width = "180"/>
+        <ColumnDefinition Width = "*"/>
+      </Grid.ColumnDefinitions>
+      <Grid Grid.Row = "0" Grid.Column ="0" VerticalOptions="Center">
+        <Label Text="Match Case:"  x:Name="switch1Label" />
+      </Grid>
+      <Grid Grid.Row = "1" Grid.Column ="0" VerticalOptions="Center">
+        <Label Text="Match Entire Cell Content:"  x:Name="switch2Label"/>
+      </Grid>
+      <Grid Grid.Row = "0" Grid.Column ="1" HorizontalOptions="Start" VerticalOptions="Center">
+        <Switch x:Name="switch1" IsToggled="{Binding IsMatchCase}" />
+      </Grid>
+      <Grid Grid.Row = "1" Grid.Column ="1" HorizontalOptions="Start" VerticalOptions="Center">
+        <Switch x:Name="switch2" IsToggled="{Binding IsMatchEntireCell}" />
+      </Grid>
+      </Grid>
+      </StackLayout>            
+      <Grid ColumnSpacing="10" x:Name="ButtonGrid" HorizontalOptions="Center">
+        <Grid.RowDefinitions>
+          <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width = "Auto"/>
+          <ColumnDefinition Width = "Auto"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnGenerate" Grid.Row = "0" Grid.Column ="0" Command="{Binding FindAndReplaceCommand}" Text ="Replace All" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">         
+        </Button>
+        <Button x:Name="btnTemplate" Grid.Row = "0" Grid.Column ="1" Command="{Binding OpenTemplateFileCommand}" Text ="View Input Template" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Button>
+      </Grid>
+    </StackLayout>
+  </local:SamplePage.ContentView>
+  <local:SamplePage.PropertyView>
+
+  </local:SamplePage.PropertyView>
+
+</local:SamplePage>

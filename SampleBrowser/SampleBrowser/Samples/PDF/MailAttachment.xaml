@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:SamplePage
+              xmlns:local="clr-namespace:SampleBrowser;assembly=SampleBrowser"
+              xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="SampleBrowser.MailAttachment">
+
+  <local:SamplePage.ContentView>
+    <StackLayout>
+      <StackLayout.BindingContext>
+        <local:PDFViewModel />
+      </StackLayout.BindingContext>
+      <Label x:Name="SampleTitle" Text="Mail Attachment"
+             FontSize="Large"
+             HorizontalOptions="Center"
+             VerticalOptions="Center">
+      </Label>
+      <Label></Label>
+      <Label x:Name="Description" Text="This sample demonstrates how to send the generated PDF document as a mail attachment."
+             FontSize="Medium"
+             HorizontalOptions="Start"
+             VerticalOptions="Center">
+      </Label>
+      <Label></Label>      
+      
+      <Button x:Name="btnGenerate"  Text="Email PDF" Command="{Binding MailCommand}" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+    </StackLayout>
+  </local:SamplePage.ContentView>
+
+  <local:SamplePage.PropertyView>
+
+  </local:SamplePage.PropertyView>
+</local:SamplePage>

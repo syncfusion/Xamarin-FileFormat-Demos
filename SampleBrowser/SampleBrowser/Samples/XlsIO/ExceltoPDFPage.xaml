@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:SamplePage
+             xmlns:local="clr-namespace:SampleBrowser;assembly=SampleBrowser"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleBrowser.ExceltoPDFPage">
+
+
+  <local:SamplePage.ContentView>
+    <StackLayout>
+      <StackLayout.BindingContext>
+        <local:ExceltoPDFViewModel />
+      </StackLayout.BindingContext>
+      <Label  x:Name="SampleTitle" Text = "Excel to PDF"
+            FontSize="Large"
+              HorizontalOptions="Center"
+            VerticalOptions="Center">
+      </Label>
+      <Label></Label>
+      <Label x:Name="Content_1" Text="This sample demonstrates how to convert a Excel document into PDF file using Web API."
+             FontSize="Medium" VerticalOptions="Center">
+
+      </Label>
+      <StackLayout>
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "180"/>
+            <ColumnDefinition Width = "*"/>
+          </Grid.ColumnDefinitions>
+          <Grid Grid.Row = "0" Grid.Column ="0" VerticalOptions="Center">
+            <Label x:Name="ViewerLabel" Text="View in Syncfusion PDF Viewer:"  />
+          </Grid>
+          <Grid Grid.Row = "0" Grid.Column ="1" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+            <Switch x:Name="switch1" IsToggled="True"/>
+          </Grid>
+        </Grid>
+      </StackLayout>
+      <Grid x:Name="buttonGrid">
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="180"></ColumnDefinition>
+          <ColumnDefinition Width="150"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="fileName" VerticalTextAlignment="Center" Grid.Column="0" Grid.Row="0">
+        </Label>
+        <Button Grid.Column="1" Command="{Binding ExcelFilePickerCommand}" Grid.Row="0" x:Name="chooseButton" Text="Choose File"/>
+      </Grid>
+      <Button x:Name="btnGenerate" Command="{Binding ExceltoPDFCommand}" Text ="Generate PDF" HorizontalOptions="Center" VerticalOptions="Center"></Button>
+      <Label></Label>
+      <Label x:Name="Error" Text="" FontSize="Medium" VerticalOptions="Center"></Label>
+    </StackLayout>
+  </local:SamplePage.ContentView>
+  <local:SamplePage.PropertyView>
+
+  </local:SamplePage.PropertyView>
+
+</local:SamplePage>

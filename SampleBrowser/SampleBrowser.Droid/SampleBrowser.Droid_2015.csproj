@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8A06F8A-19FE-49AB-8BB4-6C832264BD37}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SampleBrowser.Droid</RootNamespace>
+    <AssemblyName>SampleBrowser.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
+    <JavaOptions />
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis />
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <Debugger>Xamarin</Debugger>
+    <AndroidEnableMultiDex>True</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis />
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>True</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+    <DebugSymbols>False</DebugSymbols>
+    <DevInstrumentationEnabled>False</DevInstrumentationEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Syncfusion.Compression.Portable, Version=15.1451.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfPdfViewer.15.1.0.41\lib\MonoAndroid10\Syncfusion.Compression.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Portable, Version=15.1451.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfPdfViewer.15.1.0.41\lib\MonoAndroid10\Syncfusion.Pdf.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfPdfViewer.XForms, Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfPdfViewer.15.1.0.41\lib\MonoAndroid10\Syncfusion.SfPdfViewer.XForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfPdfViewer.XForms.Android, Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfPdfViewer.15.1.0.41\lib\MonoAndroid10\Syncfusion.SfPdfViewer.XForms.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.XForms.Android,Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfDataGrid.15.1.0.41\lib\MonoAndroid10\Syncfusion.SfDataGrid.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.XForms,Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfDataGrid.15.1.0.41\lib\MonoAndroid10\Syncfusion.SfDataGrid.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.Android,Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfDataGrid.15.1.0.41\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms,,Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfDataGrid.15.1.0.41\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms.Android,,Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfDataGrid.15.1.0.41\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.Portable,Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfDataGrid.15.1.0.41\lib\MonoAndroid10\Syncfusion.GridCommon.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Data.Portable,Version=15.1451.0.41, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfDataGrid.15.1.0.41\lib\MonoAndroid10\Syncfusion.Data.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.3.0\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v17.Leanback">
+      <HintPath>..\packages\Xamarin.Android.Support.v17.Leanback.23.3.0\lib\MonoAndroid50\Xamarin.Android.Support.v17.Leanback.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>	 
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndroidVersionDependencyService.cs" />
+    <Compile Include="FilePicker.cs" />
+    <Compile Include="FilePickerActivity.cs" />
+    <Compile Include="MailService.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveAndroid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\About.png" />
+    <AndroidResource Include="Resources\drawable\Controls.png" />
+    <AndroidResource Include="Resources\drawable\Apply.png" />
+    <AndroidResource Include="Resources\drawable\grain.png" />
+    <AndroidResource Include="Resources\drawable\PageDown.png" />
+    <AndroidResource Include="Resources\drawable\PageUp.png" />
+    <AndroidResource Include="Resources\drawable\Setting.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\About.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Controls.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Apply.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Setting.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\About.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Controls.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Apply.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Setting.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\About.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Controls.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Apply.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Setting.png" />
+    <AndroidResource Include="Resources\drawable\AppIcon.png" />
+    <AndroidResource Include="Resources\drawable\mount.jpg" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\Splash.png" />
+    <AndroidResource Include="Resources\drawable\movie.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\AppIcon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\AppIcon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\AppIcon.png" />
+    <AndroidResource Include="Resources\drawable\movie1.png" />
+    <AndroidResource Include="Resources\drawable\movie2.png" />
+    <AndroidResource Include="Resources\drawable\movie3.png" />
+    <AndroidResource Include="Resources\drawable\movie4.png" />
+    <AndroidResource Include="Resources\drawable\movie5.png" />
+    <AndroidResource Include="Resources\drawable\movie6.png" />
+    <AndroidResource Include="Resources\drawable\movie7.png" />
+    <AndroidResource Include="Resources\drawable\image1.png" />
+    <AndroidResource Include="Resources\drawable\image2.png" />
+    <AndroidResource Include="Resources\drawable\image3.png" />
+    <AndroidResource Include="Resources\drawable\image4.png" />
+    <AndroidResource Include="Resources\drawable\image5.png" />
+    <AndroidResource Include="Resources\drawable\image6.png" />
+    <AndroidResource Include="Resources\drawable\burgericon.png" />
+    <AndroidResource Include="Resources\drawable\user.png" />
+    <AndroidResource Include="Resources\drawable\pin.png" />
+    <AndroidResource Include="Resources\drawable\editor.png" />
+    <AndroidResource Include="Resources\drawable\movetodate.png" />
+    <AndroidResource Include="Resources\drawable\scheduleview.png" />
+    <AndroidResource Include="Resources\drawable\eficon.png" />
+    <AndroidResource Include="Resources\drawable\bucolicpie.png" />
+    <AndroidResource Include="Resources\drawable\bumpercrop.png" />
+    <AndroidResource Include="Resources\drawable\doublecheesemargherita.png" />
+    <AndroidResource Include="Resources\drawable\Image8.png" />
+    <AndroidResource Include="Resources\drawable\Image9.png" />
+    <AndroidResource Include="Resources\drawable\Image10.png" />
+    <AndroidResource Include="Resources\drawable\Image11.png" />
+    <AndroidResource Include="Resources\drawable\Image12.png" />
+    <AndroidResource Include="Resources\drawable\Image13.png" />
+    <AndroidResource Include="Resources\drawable\Image14.png" />
+    <AndroidResource Include="Resources\drawable\Image15.png" />
+    <AndroidResource Include="Resources\drawable\Image16.png" />
+    <AndroidResource Include="Resources\drawable\Image17.png" />
+    <AndroidResource Include="Resources\drawable\Image18.png" />
+    <AndroidResource Include="Resources\drawable\Image19.png" />
+    <AndroidResource Include="Resources\drawable\Image20.png" />
+    <AndroidResource Include="Resources\drawable\Image21.png" />
+    <AndroidResource Include="Resources\drawable\Image22.png" />
+    <AndroidResource Include="Resources\drawable\Image23.png" />
+    <AndroidResource Include="Resources\drawable\Image24.png" />
+    <AndroidResource Include="Resources\drawable\Image25.png" />
+    <AndroidResource Include="Resources\drawable\Image26.png" />
+    <AndroidResource Include="Resources\drawable\Image27.png" />
+    <AndroidResource Include="Resources\drawable\Image28.png" />
+    <AndroidResource Include="Resources\drawable\Image29.png" />
+    <AndroidResource Include="Resources\drawable\family.png" />
+    <AndroidResource Include="Resources\drawable\Hospital.png" />
+    <AndroidResource Include="Resources\drawable\Image30.png" />
+    <AndroidResource Include="Resources\drawable\margherita.png" />
+    <AndroidResource Include="Resources\drawable\saladdaze.png" />
+    <AndroidResource Include="Resources\drawable\spiceoflife.png" />
+    <AndroidResource Include="Resources\drawable\verynicoise.png" />
+    <AndroidResource Include="Resources\drawable\Up.png" />
+    <AndroidResource Include="Resources\drawable\Down.png" />
+    <AndroidResource Include="Resources\drawable\Delete.png" />
+    <AndroidResource Include="Resources\drawable\Favorites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleBrowser\SampleBrowser_2015.csproj">
+      <Name>SampleBrowser</Name>
+      <Project>{3375714E-192C-4D0B-AA67-C974D99F1A11}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.1.4.2.6355\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.2.6355\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\usa_state.dbf" />
+    <AndroidAsset Include="Assets\usa_state.shp" />
+    <AndroidAsset Include="Assets\world1.dbf" />
+    <AndroidAsset Include="Assets\world1.shp" />
+    <AndroidAsset Include="Assets\Custom.dbf" />
+    <AndroidAsset Include="Assets\Custom.shp" />
+    <AndroidAsset Include="Assets\Custom.shx" />
+  </ItemGroup>
+  <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

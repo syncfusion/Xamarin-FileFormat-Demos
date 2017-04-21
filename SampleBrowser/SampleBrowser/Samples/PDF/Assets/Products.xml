@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+  <Products>
+    <Image1>XlsIO</Image1>
+    <Description1>Essential XlsIO</Description1>
+    <Image2>DocIO</Image2>
+    <Description2>Essential DocIO</Description2>
+    <Image3>PDF</Image3>
+    <Description3>Essential PDF</Description3>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>Create standards-compliant Excel (legacy Office 2007 and Office 2010) reports from any .NET platform.</Description1>
+    <Image2></Image2>
+    <Description2>Create standards-compliant Word (Legacy and Office 2007) reports from any .NET platform.</Description2>
+    <Image3></Image3>
+    <Description3>Create-standards compliant PDF reports from any .NET platform.</Description3>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>http://www.syncfusion.com/products/reporting-edition/xlsio</Description1>
+    <Image2></Image2>
+    <Description2>http://www.syncfusion.com/products/reporting-edition/docio</Description2>
+    <Image3></Image3>
+    <Description3>http://www.syncfusion.com/products/reporting-edition/pdf</Description3>
+  </Products>
+  <Products>
+    <Image1>PView</Image1>
+    <Description1>Essential PDF Viewer</Description1>
+    <Image2>RView</Image2>
+    <Description2>Essential Report Viewer</Description2>
+    <Image3>Design</Image3>
+    <Description3>Essential Report Designer</Description3>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>View and print PDF files without relying on Adobe Acrobat.</Description1>
+    <Image2></Image2>
+    <Description2>View and print files in RDL format within your application.</Description2>
+    <Image3></Image3>
+    <Description3>Build RDL based reports visually</Description3>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>http://www.syncfusion.com/products/reporting-edition/pdf-viewer</Description1>
+    <Image2></Image2>
+    <Description2>http://www.syncfusion.com/products/reporting-edition/report-viewer</Description2>
+    <Image3></Image3>
+    <Description3>http://www.syncfusion.com/products/reporting-edition/report-designer</Description3>
+  </Products>
+  <Products>
+    <Image1>Spread</Image1>
+    <Description1>Essential Spreadsheet</Description1>
+    <Image2>Calc</Image2>
+    <Description2>Essential Calculate</Description2>
+    <Image3>Group</Image3>
+    <Description3>Essential Grouping</Description3>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>This control allows you to create and modify spreadsheets without relying on Excel.</Description1>
+    <Image2></Image2>
+    <Description2>This powerful calculation engine has over 150 built-in formulas.</Description2>
+    <Image3></Image3>
+    <Description3>As part of our fastest .NET grid control, you will be able to manipulate data with greater speed.</Description3>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>http://www.syncfusion.com/products/reporting-edition/spreadsheet</Description1>
+    <Image2></Image2>
+    <Description2>http://www.syncfusion.com/products/reporting-edition/calculate</Description2>
+    <Image3></Image3>
+    <Description3>http://www.syncfusion.com/products/reporting-edition/grouping</Description3>
+  </Products>
+  <Products>
+    <Image1>Proj</Image1>
+    <Description1>Essential ProjIO</Description1>
+    <Image2>Write</Image2>
+    <Description2>Essential Report Writer</Description2>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>Create Microsoft Project XML documents from any .NET platform.</Description1>
+    <Image2></Image2>
+    <Description2>Convert RDL based reports to PDF in .NET</Description2>
+  </Products>
+  <Products>
+    <Image1></Image1>
+    <Description1>http://www.syncfusion.com/products/reporting-edition/projio</Description1>
+    <Image2></Image2>
+    <Description2>http://www.syncfusion.com/products/reporting-edition/report-writer</Description2>
+  </Products>
+</dataroot>
