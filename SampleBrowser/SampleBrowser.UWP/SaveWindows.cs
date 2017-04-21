@@ -67,6 +67,8 @@ namespace SampleBrowser.UWP
                 }
                 storageFile = await savePicker.PickSaveFileAsync();
 
+                if (storageFile == null)
+                    return;
                 using (Stream outStream = await storageFile.OpenStreamForWriteAsync())
                 {
                     if (outStream.CanSeek)

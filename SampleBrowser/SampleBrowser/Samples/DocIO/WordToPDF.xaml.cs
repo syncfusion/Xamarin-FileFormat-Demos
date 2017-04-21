@@ -167,13 +167,16 @@ namespace SampleBrowser
             #region Launch PDF file
             if (IsToggled)
             {
-                //Open in Essential PDF viewer.
-                PdfViewerUI pdfViewer = new SampleBrowser.PdfViewerUI();
-                pdfViewer.PdfDocumentStream = outputStream;
-                if (Device.Idiom != TargetIdiom.Phone && Device.OS == TargetPlatform.Windows)
-                    await PDFViewModel.Navigation.PushModalAsync(new NavigationPage(pdfViewer));
-                else
-                    await PDFViewModel.Navigation.PushAsync(pdfViewer);
+                if (PDFViewModel.Navigation.ModalStack.Count == 0)
+                {
+                    //Open in Essential PDF viewer.
+                    PdfViewerUI pdfViewer = new SampleBrowser.PdfViewerUI();
+                    pdfViewer.PdfDocumentStream = outputStream;
+                    if (Device.Idiom != TargetIdiom.Phone && Device.OS == TargetPlatform.Windows)
+                        await PDFViewModel.Navigation.PushModalAsync(new NavigationPage(pdfViewer));
+                    else
+                        await PDFViewModel.Navigation.PushAsync(pdfViewer);
+                }
             }
             else
             {
